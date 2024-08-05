@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file to the container
-COPY target/polls-0.0.1-SNAPSHOT.jar /app/polls.jar
+COPY target/polls-1.0.0.jar /app/polls.jar
 
 # Expose port 8081
 EXPOSE 8081
