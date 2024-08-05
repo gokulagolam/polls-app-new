@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file to the container
-COPY target/polls-0.0.1-SNAPSHOT.jar /app/polls-0.0.1-SNAPSHOT.jar
+COPY target/polls-0.0.1-SNAPSHOT.jar /app/polls.jar
 
 # Expose port 8081
 EXPOSE 8081
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "/app/polls-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/polls.jar"]
